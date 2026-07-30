@@ -1,0 +1,39 @@
+{
+  "name": "sapna-ai-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Ultra-Premium AI-Powered Full Stack Developer Portfolio & Futuristic AI OS for Sapna Pradhan",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "server": "node server/index.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.170.0",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.120.0",
+    "framer-motion": "^11.15.0",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.18",
+    "lucide-react": "^0.468.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.2",
+    "tailwindcss": "^3.4.16",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20"
+  }
+}

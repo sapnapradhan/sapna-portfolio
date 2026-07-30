@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapna Pradhan | Ultra-Premium AI-Powered Full Stack Developer & AI OS</title>
+  <meta name="description" content="Awwwards-grade Developer Portfolio & Futuristic AI OS for Sapna Pradhan - Full Stack Developer & AI Engineer specializing in Next.js, React, Python, Django, PostgreSQL, and WebGL.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- External 3D & Animation Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+  <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+  <!-- Background WebGL Layer -->
+  <div id="webgl-bg"></div>
+
+  <!-- ==========================================================================
+       CINEMATIC INTRO BOOT SEQUENCE
+       ========================================================================== -->
+  <div id="boot-screen">
+    <div class="boot-content">
+      <div class="boot-logo-icon">SP</div>
+      <div id="boot-log-text" class="boot-log-text">INITIALIZING SYSTEM...</div>
+      <div class="boot-progress-bar">
+        <div id="boot-progress-fill" class="boot-progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       GLASSNAV NAVBAR
+       ========================================================================== -->
+  <nav class="glass-nav">
+    <a href="#hero" class="nav-brand">
+      <div class="nav-brand-logo">SP</div>
+      <span class="nav-brand-text">SAPNA AI OS</span>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-link-item"><a href="#about" class="active">About</a></li>
+      <li class="nav-link-item"><a href="#skills">3D Skill Galaxy</a></li>
+      <li class="nav-link-item"><a href="#projects">Projects (Netflix)</a></li>
+      <li class="nav-link-item"><a href="#achievements">Stats & Badges</a></li>
+
+      <li class="nav-link-item"><a href="#resume">Resume</a></li>
+      <li class="nav-link-item"><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Available for Hire
+      </div>
+      <button id="audio-toggle-btn" class="audio-toggle-btn" title="Toggle Futuristic Audio FX">🔊</button>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       MAIN HERO SECTION & 3D HOLOGRAM AVATAR
+       ========================================================================== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-text-content">
+      <div class="hero-subtitle-tag">
+        <span>🟢 SYSTEM STATUS: ONLINE</span>
+      </div>
+      <h1 class="hero-title">
+        HELLO,
+        <span class="name-highlight">I'M SAPNA PRADHAN</span>
+      </h1>
+      <div class="hero-typing-wrapper">
+        <span id="hero-typing-target" class="hero-typing-text"></span>
+      </div>
+      <p class="hero-description">
+        Crafting enterprise full-stack web applications, scalable backend microservices, and next-generation AI interfaces with precision engineering and modern aesthetics.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="sapna_resume.pdf" target="_blank" class="btn-glass btn-glass-primary">
+          Download Resume
+        </a>
+        <a href="#projects" class="btn-glass btn-glass-secondary">
+           View Projects
+        </a>
+        <a href="#contact" class="btn-glass btn-glass-secondary">
+          📩 Contact Me
+        </a>
+      </div>
+    </div>
+
+    <!-- 3D Hologram Avatar Stage -->
+    <div class="hologram-stage-container">
+      <div class="hologram-card-stage">
+        <div class="hologram-scan-line"></div>
+        <div id="hologram-canvas-container" class="hologram-avatar-canvas-wrapper"></div>
+        <div class="hologram-overlay-ui">
+          <span class="hologram-status-label">HOLOGRAM: ACTIVE</span>
+          <span style="font-size: 0.75rem; color: #888;">Interactive  Face Track</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT & INTERACTIVE TIMELINE SECTION
+       ========================================================================== -->
+  <section id="about" class="section-container">
+    <div class="section-header">
+      <span class="section-tag">01 // PROFILE & METRICS</span>
+      <h2 class="section-title">ENGINEERING EXCELLENCE</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="story-timeline">
+        <div class="timeline-item-card">
+          <div class="timeline-year-tag">JUNE 2026 - JULY 2026</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 6px;">System Intern @ Bharat Coking Coal Limited (BCCL)</h3>
+          <p style="color: #8E8E93; font-size: 0.95rem;">
+            Architected an enterprise Web-Based Employee Management System (HRMS) using React.js, Vite, Supabase, and PostgreSQL with role-based access control (RBAC) and row-level security (RLS).
+          </p>
+        </div>
+
+        <div class="timeline-item-card">
+          <div class="timeline-year-tag">JULY 2026 - AUGUST 2026</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Web3 & Blockchain Fellow @ DoraHacks / DoraDAO</h3>
+          <p style="color: #8E8E93; font-size: 0.95rem;">
+            Selected for an intensive Web3 fellowship researching smart contracts, decentralized applications (dApps), and blockchain ecosystem architectures.
+          </p>
+        </div>
+
+        <div class="timeline-item-card">
+          <div class="timeline-year-tag">2024 - PRESENT</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 6px;">B.Tech CSE @ ITER, SOA University</h3>
+          <p style="color: #8E8E93; font-size: 0.95rem;">
+            Bachelor of Technology in Computer Science & Engineering. Maintaining an exceptional CGPA of 8.43 / 10.0 with deep focus on Data Structures, Algorithms, OOP, and DBMS.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-stats-grid">
+        <div class="stat-glass-card">
+          <div class="stat-number">8.43</div>
+          <div class="stat-label">CGPA / 10.0</div>
+        </div>
+        <div class="stat-glass-card">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-glass-card">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Tech Stack Mastered</div>
+        </div>
+        <div class="stat-glass-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Code Integrity</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3D SKILL GALAXY SECTION
+       ========================================================================== -->
+  <section id="skills" class="section-container">
+    <div class="section-header">
+      <span class="section-tag">02 // 3D INTERACTIVE GALAXY</span>
+      <h2 class="section-title">SKILL PLANETS & COMPETENCIES</h2>
+    </div>
+
+    <div class="skill-galaxy-wrapper">
+      <div id="skill-canvas"></div>
+      
+      <!-- Dynamic Hover Card -->
+      <div id="skill-info-overlay" class="skill-info-overlay">
+        <h4 class="skill-name" style="font-size: 1.2rem; color: #FFF; margin-bottom: 4px;">Skill Name</h4>
+        <div class="skill-category" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-electric); margin-bottom: 8px;">Category</div>
+        <div class="skill-level" style="font-size: 0.9rem; color: #DDD;">Proficiency Level</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NETFLIX MOVIE GALLERY (PROJECTS)
+       ========================================================================== -->
+  <section id="projects" class="section-container">
+    <div class="section-header">
+      <span class="section-tag">03 // FEATURED PRODUCTIONS</span>
+      <h2 class="section-title">NETFLIX PROJECT GALLERY</h2>
+    </div>
+
+    <div class="netflix-carousel-container">
+      <!-- Project Card 1 -->
+      <div class="netflix-movie-card">
+        <img src="assets/bccl_poster.jpg" alt="BCCL HRMS" class="movie-poster-img">
+        <div class="movie-card-gradient"></div>
+        <div class="movie-card-content">
+          <div class="movie-match-tag">99% MATCH  2026 ENTERPRISE</div>
+          <h3 class="movie-title">BCCL Employee Management System</h3>
+          <div class="movie-tags">
+            <span class="movie-tag-pill">React.js</span>
+            <span class="movie-tag-pill">Supabase</span>
+            <span class="movie-tag-pill">PostgreSQL</span>
+            <span class="movie-tag-pill">RBAC</span>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://github.com/sapnapradhan/employeemanagementofbccl.git" target="_blank" class="btn-glass btn-glass-primary" style="padding: 8px 16px; font-size: 0.8rem;">GitHub</a>
+            <a href="https://employeemanagementofbccl.vercel.app/
+
+" target="_blank" class="btn-glass btn-glass-secondary" style="padding: 8px 16px; font-size: 0.8rem;">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="netflix-movie-card">
+        <img src="assets/bccl_poster.jpg" alt="Django Blog REST API" class="movie-poster-img">
+        <div class="movie-card-gradient"></div>
+        <div class="movie-card-content">
+          <div class="movie-match-tag">97% MATCH BACKEND ENGINE</div>
+          <h3 class="movie-title">Django Blog REST API</h3>
+          <div class="movie-tags">
+            <span class="movie-tag-pill">Python</span>
+            <span class="movie-tag-pill">Django DRF</span>
+            <span class="movie-tag-pill">JWT</span>
+            <span class="movie-tag-pill">PostgreSQL</span>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            
+            <a href="#" class="btn-glass btn-glass-secondary" style="padding: 8px 16px; font-size: 0.8rem;">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="netflix-movie-card">
+        <img src="assets/hologram_avatar.jpg" alt="Sapna AI OS Portfolio" class="movie-poster-img">
+        <div class="movie-card-gradient"></div>
+        <div class="movie-card-content">
+          <div class="movie-match-tag">100% MATCH â€¢ 3D WEBGL</div>
+          <h3 class="movie-title">Sapna AI OS & 3D Portfolio</h3>
+          <div class="movie-tags">
+            <span class="movie-tag-pill">Next.js</span>
+            <span class="movie-tag-pill">Three.js</span>
+            <span class="movie-tag-pill">WebGL</span>
+            <span class="movie-tag-pill">Express</span>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <a href="#" class="btn-glass btn-glass-primary" style="padding: 8px 16px; font-size: 0.8rem;">Explore OS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ACHIEVEMENTS & LIVE CODING STATS
+       ========================================================================== -->
+  <section id="achievements" class="section-container">
+    <div class="section-header">
+      <span class="section-tag">04 // TELEMETRY & STATS</span>
+      <h2 class="section-title">CODING METRICS & TROPHIES</h2>
+    </div>
+
+    <div class="achievements-grid">
+      <div class="stats-panel-card">
+        <h3 style="font-size: 1.2rem; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+          <span> GitHub Activity</span>
+        </h3>
+        <p style="font-size: 0.85rem; color: #8E8E93;">50+ Contributions in 2026</p>
+        <div class="contribution-graph-grid">
+          <div class="contrib-cell contrib-lvl-1"></div>
+          <div class="contrib-cell contrib-lvl-2"></div>
+          <div class="contrib-cell contrib-lvl-3"></div>
+          <div class="contrib-cell contrib-lvl-1"></div>
+          <div class="contrib-cell contrib-lvl-2"></div>
+          <div class="contrib-cell contrib-lvl-3"></div>
+          <div class="contrib-cell contrib-lvl-2"></div>
+          <div class="contrib-cell contrib-lvl-3"></div>
+          <div class="contrib-cell contrib-lvl-1"></div>
+          <div class="contrib-cell contrib-lvl-2"></div>
+          <div class="contrib-cell contrib-lvl-3"></div>
+          <div class="contrib-cell contrib-lvl-1"></div>
+          <div class="contrib-cell contrib-lvl-2"></div>
+          <div class="contrib-cell contrib-lvl-3"></div>
+          <div class="contrib-cell contrib-lvl-2"></div>
+          <div class="contrib-cell contrib-lvl-3"></div>
+        </div>
+      </div>
+
+      <div class="stats-panel-card">
+        <h3 style="font-size: 1.2rem; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+          <span> LeetCode Analytics</span>
+        </h3>
+        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+          <div><span style="color: #46D369; font-weight: 700;">Easy:</span> 50 Solved</div>
+          <div><span style="color: #FFB800; font-weight: 700;">Medium:</span> 10 Solved</div>
+          <div><span style="color: #E50914; font-weight: 700;">Hard:</span> 5 Solved</div>
+        </div>
+      </div>
+
+      <div class="stats-panel-card">
+        <h3 style="font-size: 1.2rem; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+          <span>Badges & Certs</span>
+        </h3>
+        <ul style="list-style: none; color: #8E8E93; font-size: 0.9rem; line-height: 1.8;">
+          <li> DoraHacks Web3 Fellow 2026</li>
+          <li> BCCL System Engineering Certificate</li>
+          <li>Top Rated CS Engineer (ITER CGPA 8.43)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- ==========================================================================
+     ACHIEVEMENTS & AWARDS CARD
+     ========================================================================== -->
+<div class="stats-panel-card" style="border-color: rgba(229, 9, 20, 0.4); box-shadow: 0 0 25px rgba(229, 9, 20, 0.15);">
+  <h3 style="font-size: 1.2rem; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; color: #FFF;">
+    <span>🏆 Achievements & Honors</span>
+  </h3>
+  <ul style="list-style: none; color: #CCC; font-size: 0.92rem; line-height: 2;">
+    <li style="margin-bottom: 8px;">
+       Selected for the <strong style="color: #00F0FF;">Flipkart GRiD 7.0</strong> Software Development Challenge
+    </li>
+    <li style="margin-bottom: 8px;">
+       Qualified for the <strong style="color: #E50914;">Amazon Future Engineer</strong> Program (Phase 1)
+    </li>
+    <li style="margin-bottom: 8px;">
+       Selected for the <strong style="color: #FFF;">DoraHacks Web3</strong> Fellowship 2026
+    </li>
+    <li>
+       B.Tech CSE @ ITER, SOA University (CGPA: 8.43 / 10.0)
+    </li>
+  </ul>
+</div>
+  <!-- ==========================================================================
+       RESUME VIEWER & AI ANALYZER
+       ========================================================================== -->
+  <section id="resume" class="section-container">
+    <div class="section-header">
+      <span class="section-tag">06 // DOCUMENT & AI AUDIT</span>
+      <h2 class="section-title">RESUME & JOB MATCHER</h2>
+    </div>
+
+    <div class="resume-section-wrapper">
+      <div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Official Resume Document</h3>
+        <p style="color: #8E8E93; margin-bottom: 1.5rem;">
+          Download or view Sapna Pradhan's comprehensive resume detailing work experience at BCCL, DoraHacks fellowship, project portfolio, and SOA University academic background.
+        </p>
+        <a href="sapna_resume.pdf" target="_blank" class="btn-glass btn-glass-primary">
+           Download PDF Resume
+        </a>
+      </div>
+
+      <div class="resume-analyzer-box">
+        <h4 style="font-size: 1.1rem; color: var(--cyan-electric); margin-bottom: 10px;">– AI Resume Matcher</h4>
+        <p style="font-size: 0.85rem; color: #8E8E93; margin-bottom: 12px;">Paste a Job Description below to calculate Sapna's compatibility score:</p>
+        <textarea id="jd-input" class="form-textarea" rows="3" placeholder="e.g. Seeking Full Stack Developer proficient in React, Node, Python, PostgreSQL..."></textarea>
+        <button id="analyze-resume-btn" class="btn-glass btn-glass-secondary" style="margin-top: 10px; width: 100%;">Analyze Match Score</button>
+        
+        <div style="margin-top: 15px; display: flex; align-items: center; gap: 15px;">
+          <div id="match-score-val" style="font-size: 2.2rem; font-weight: 900; color: var(--netflix-red);">--%</div>
+          <div id="match-details" style="font-size: 0.8rem; color: #AAA;">Awaiting input analysis...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact" class="section-container">
+    <div class="section-header">
+      <span class="section-tag">07 // INITIATE TRANSMISSION</span>
+      <h2 class="section-title">GET IN TOUCH</h2>
+    </div>
+
+    <div class="contact-grid">
+      <form class="glass-form" onsubmit="event.preventDefault(); alert('Message dispatched to Sapna Pradhan!');">
+        <div class="form-group">
+          <label class="form-label">YOUR NAME</label>
+          <input type="text" class="form-input" placeholder="e.g. Tech Recruiter" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">YOUR EMAIL</label>
+          <input type="email" class="form-input" placeholder="e.g. hr@company.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">TRANSMISSION MESSAGE</label>
+          <textarea class="form-textarea" rows="5" placeholder="Let's build something extraordinary..." required></textarea>
+        </div>
+        <button type="submit" class="btn-glass btn-glass-primary" style="width: 100%;">
+          Dispatch Signal
+        </button>
+      </form>
+
+      <div style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="stat-glass-card" style="text-align: left;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Direct Communication</h3>
+          <p style="color: #8E8E93; font-size: 0.95rem; margin-bottom: 8px;">👧 sapnapradhan104@gmail.com</p>
+          <p style="color: #8E8E93; font-size: 0.95rem; margin-bottom: 8px;">📞 +91 85389547745</p>
+          <p style="color: #8E8E93; font-size: 0.95rem;"> 📍Hazaribag, Jharkhand / Odisha, India</p>
+        </div>
+
+        <div class="stat-glass-card" style="text-align: left; margin-top: 1rem;">
+          <h4 style="font-size: 1rem; color: var(--cyan-electric); margin-bottom: 6px;">LIVE SYSTEM STATUS</h4>
+          <div id="live-utc-clock" style="font-family: var(--font-mono); font-size: 0.9rem; color: #FFF;">--:--:-- UTC</div>
+          
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       JARVIS AI ASSISTANT WIDGET
+       ========================================================================== -->
+  <div class="ai-assistant-widget">
+    <button id="ai-assistant-toggle" class="ai-assistant-toggle-btn" title="Open Sapna AI Assistant">🤖</button>
+    <div id="ai-assistant-modal" class="ai-assistant-modal">
+      <div class="ai-modal-header">
+        <div class="ai-modal-title"><span>🤖</span> SAPNA AI OS ASSISTANT</div>
+        <button id="ai-assistant-close" style="background: none; border: none; color: #888; font-size: 1.2rem;">âœ•</button>
+      </div>
+      <div id="ai-chat-body" class="ai-chat-body">
+        <div class="chat-bubble chat-bubble-ai">
+          Greetings! I am Sapna's AI Assistant. Ask me about her BCCL internship, B.Tech CGPA, full-stack projects, or technical skills!
+        </div>
+      </div>
+      <div class="ai-suggested-pills">
+        <span class="suggest-pill">Tell me about BCCL Internship</span>
+        <span class="suggest-pill">What are her main projects?</span>
+        
+      </div>
+      <div class="ai-chat-input-area">
+        <input type="text" id="ai-chat-input" class="ai-chat-input" placeholder="Ask AI Assistant...">
+        <button id="ai-send-btn" class="ai-send-btn">🤖</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer-glass">
+    <div>© 2026 Sapna Pradhan. Engineered with Next.js, Three.js & AI.</div>
+    
+  </footer>
+
+  <!-- Application Engine Script -->
+  <script src="app.js"></script>
+</body>
+</html>
+
